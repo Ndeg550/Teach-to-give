@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+        <script type="text/javascript">
+            var string = prompt("please enter a string:");
+            if (string) {  //Ensuring string is not null
+                const reg = /[aeiou]/gi
+                var matches = string.match(reg);
+                var count = matches ?
+        matches.length : 0; //Handle null case
+                console.log("Vowel count:",
+        count);
+                alert("Vowel count:" +  
+        count ); // show the result to the user
+            } else{
+                    console.log("No input provided.");
+                }s
+        </script>
+</head>
+<body>
+    <h1>How many vowels are there in this string?</h1>
+</body>
+</html>
